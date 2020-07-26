@@ -1,0 +1,18 @@
+<HTML>
+    <meta http-equiv="refresh" content="20" />
+    <BODY>
+        <form method="POST" action="/home">
+            <h3>Enter Message :</h3><input type = "text" name= "message" />
+            <input type = "submit">
+        </form>
+        <table>
+            {% for row in result %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </BODY>
+    </HTML>

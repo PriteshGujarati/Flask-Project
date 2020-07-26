@@ -1,0 +1,39 @@
+
+
+<HTML>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            width: 50%;
+        }
+        
+        td, th {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        </style>
+</head>
+<BODY>
+<form method="POST" action="/">
+    <center>
+    <H1>Enter your details </H1> <br>
+    <table>
+        <tr>
+            <td>User Name :</td><td><input type = "text" name= "id" /></td>
+        </tr> 
+        <tr>
+        <td>Password :</td><td><input type = "password" name= "pass" /></td>
+        </tr>
+    </table>
+    <input type = "submit">
+    <br>    
+    {% if relogin != "1" %}
+    {{relogin}}
+    {% endif %}    
+    </center>
+</form>
+
+</BODY>
+</HTML>
